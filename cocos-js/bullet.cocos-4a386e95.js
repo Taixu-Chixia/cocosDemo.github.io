@@ -1,4 +1,4 @@
-System.register(['./_commonjsHelpers-364bf34e.js'], function (exports) {
+System.register(['./commonjsHelpers-364bf34e.js'], function (exports) {
 	'use strict';
 	var unwrapExports, createCommonjsModule, commonjsGlobal;
 	return {
