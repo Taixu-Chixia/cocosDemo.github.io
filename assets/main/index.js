@@ -752,7 +752,7 @@ System.register("chunks:///_virtual/dweb_player.ts", ['./rollupPluginModLoBabelH
   };
 });
 
-System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './Item.ts', './ItemList.ts'], function (exports) {
+System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './ItemList.ts'], function (exports) {
   'use strict';
 
   var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, Node, Camera, Prefab, _decorator, v3, Input, Quat, quat, instantiate, MeshRenderer, tween, UITransform, Size, Component, ItemList;
@@ -779,7 +779,7 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
       UITransform = module.UITransform;
       Size = module.Size;
       Component = module.Component;
-    }, null, function (module) {
+    }, function (module) {
       ItemList = module.ItemList;
     }],
     execute: function () {
@@ -853,20 +853,7 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           this.initGame();
         };
 
-        _proto.update = function update(dt) {
-          if (!this.isNodeActive) return;
-          this._checkDtCounter++;
-
-          if (this._checkDtCounter === 60) {
-            this._checkAllItemsPosition();
-
-            this._checkDtCounter = 0;
-          }
-
-          if (!this._canScroll) return;
-
-          this._onScrollUpdate();
-        };
+        _proto.update = function update(dt) {};
 
         _proto.initGame = function initGame(level) {
           this._initCamera();
@@ -878,11 +865,7 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           this.node.on(Input.EventType.TOUCH_MOVE, this._onTouchMove, this);
           this.node.on(Input.EventType.TOUCH_CANCEL, this._onTouchEnd, this);
 
-          this._initLevelData(level);
-
           this._initBaskets();
-
-          this._initItems();
 
           this._canScroll = true;
           return;
@@ -917,74 +900,6 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           //     this._basketNodes[i] && this._basketNodes[i].destroy();
           // }
           // this._basketNodes = [];
-        }
-        /**初始化关卡数据 */
-        ;
-
-        _proto._initLevelData = function _initLevelData(level) {
-          //这里如果是读的样例的话直接生成，也可以是读取保存的数据
-          return; // this.myList.updateList(null);
-          // // this._itemData = this._levelData.itemData;
-          // // this._extraItemData = this._levelData.extraItemData;
-          // const itemList = this._itemData.split(",");
-          // this._itemKindData = [];
-          // this._itemNumData = [];
-          // this._curSettedItemNum = 0;
-          // for (let i = 0; i < itemList.length; i++) {
-          //     const list = itemList[i].split("#");
-          //     const id = +list[0];
-          //     const num = +list[1];
-          //     this._itemKindData[i] = id;
-          //     this._itemNumData[i] = num;
-          // }
-        };
-
-        _proto._initItems = function _initItems() {
-          // 这个是初始化物品位置 暂时不用
-          return; // if (this._itemKindData.length > 0) {
-          //     for (let i = 0; i < this._itemKindData.length; i++) {
-          //         const id = +this._itemKindData[i];
-          //         const num = +this._itemNumData[i];
-          //         for (let j = 0; j < num; j++) {
-          //             const item = cc.instantiate(this.itemPrefab);
-          //             this._setItemOnFloor(item);
-          //             this._itemNodes.push(item);
-          //             item.getComponent(Item).init(id);
-          //         }
-          //     }
-          // }
-          // const extraItemList = this._extraItemData.split(",");
-          // if (extraItemList.length > 0) {
-          //     for (let i = 0; i < extraItemList.length; i++) {
-          //         const list = extraItemList[i].split("#");
-          //         const id = +list[0];
-          //         const num = +list[1];
-          //         for (let j = 0; j < num; j++) {
-          //             const item = cc.instantiate(this.itemPrefab);
-          //             this._setItemOnFloor(item);
-          //             this._extraItemNodes.push(item);
-          //             item.getComponent(Item).init(id);
-          //         }
-          //     }
-          // }
-        };
-
-        _proto._setItemOnFloor = function _setItemOnFloor(node) {//这里是把物品放在篮子里 后续可以改成预制 暂时不用
-          // node.setParent(this.GameNode);
-          // const randx = (Math.random() - 0.5) * 10;
-          // const randy = (Math.random() + 0.1) * 5;
-          // const randz = (Math.random() - 0.5) * 10;
-          // node.setPosition(cc.v3(randx, randy, randz));
-          // const rx = Math.random() * 360;
-          // const ry = Math.random() * 360;
-          // const rz = Math.random() * 360;
-          // node.setRotation(cc.Quat.fromEuler(cc.quat(), rx, ry, rz));
-          // const RigidBody = node.getComponent(cc.RigidBody);
-          // if (RigidBody) {
-          //     RigidBody.useGravity = true;
-          //     RigidBody.setLinearVelocity(cc.Vec3.ZERO);
-          //     RigidBody.setAngularVelocity(cc.Vec3.ZERO);
-          // }
         };
 
         _proto._initBaskets = function _initBaskets() {
@@ -996,27 +911,12 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           var node = instantiate(this.wallPrefab);
           this.GameNode.addChild(node);
           node.setScale(x, 0.01, z);
-          node.setPosition(0, -y / 2, 0); // 有多个柜台的时候用这个
-          // let x = 0;
-          // if (this._itemKindData.length === 1) {
-          //     this.BasketNode.setPosition(0, this.BasketNode.position.y, this.BasketNode.position.z);
-          // } else {
-          //     this.BasketNode.setPosition(-5.5, this.BasketNode.position.y, this.BasketNode.position.z);
-          // }
-          // for (let i = 0; i < this._itemKindData.length; i++) {
-          //     const itemId = +this._itemKindData[i];
-          //     const num = +this._itemNumData[i];
-          //     const basket = cc.instantiate(this.basketPrefab);
-          //     this.BasketNode.addChild(basket);
-          //     basket.setPosition(x, 0, 0);
-          //     x += basketLen;
-          //     this._basketNodes.push(basket);
-          //     const BasketComp = basket.getComponent(Basket);
-          //     BasketComp.init(i, itemId, num);
-          //     const collider = basket.getComponent(cc.Collider);
-          //     collider && collider.on("onCollisionEnter", this._onCollisionEnter, this);
-          // }
-        };
+          node.setPosition(0, -y / 2, 0);
+        }
+        /**touchEnd绑定事件 */
+        ;
+
+        _proto._onTouchEnd = function _onTouchEnd(event) {};
 
         _proto._onTouchStart = function _onTouchStart(event) {
           console.warn(this.CCCamera.getComponent(Camera).worldToScreen(v3(event.getLocation().x, event.getLocation().y, 0)));
@@ -1028,151 +928,288 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           mesh.setMaterial(this.myList.materials[this.myList.curItemId], 0);
           node.setPosition(0, 0, 0);
           node.setParent(this.BasketNode);
-          return;
-        };
+          return; //     if (!this.canPlay || this.myList.curItemId < 0) return;
+          //     this._setFoodTouchMove(event);
+          // }
+        }
+        /**touchMove绑定事件 */
+        ;
 
-        _proto._onTouchEnd = function _onTouchEnd(event) {
-          return;
-        };
+        _proto._onTouchMove = function _onTouchMove(event) {// event.getUILocation(this._tempTouchVec2);
+          // if (this._judgeInArea(this._tempTouchVec2, this.gameCtrlPos)) {
+          //     if (!this.canPlay || this.myList.curItemId < 0) return;
+          //     this._setFoodTouchMove(event);
+          // }
+        }
+        /**放置食物的touchMove事件 */
+        ;
 
-        _proto._onTouchMove = function _onTouchMove(event) {
-          return;
-        };
+        _proto._setFoodTouchMove = function _setFoodTouchMove(event) {// if (!this.canPlay || this.myList.curItemId < 0) return;
+          // event.getLocation(this._tempTouchVec2);
+          // let pos = this._tempTouchVec2;
+          // if (!this._judgeInArea(pos, this.touchControlPos)) return;
+          // foodRadiux.x = (this.touchControlPos.x2 - this.touchControlPos.x1) / this.openSize.x;
+          // foodRadiux.z = (this.touchControlPos.y2 - this.touchControlPos.y1) / this.openSize.z;
+          // const x = Math.floor((pos.x - this.touchControlPos.x1) / foodRadiux.x);
+          // const z = Math.floor((pos.y - this.touchControlPos.y1) / foodRadiux.z);
+          // if (this._touchMoveState === touchMoveState.Normal) {
+          //     //当玩家手指移动距离太近,不放东西
+          //     const disx = x > this._setFoodTouchPos.x ? x - this._setFoodTouchPos.x : this._setFoodTouchPos.x - x;
+          //     const disz = z > this._setFoodTouchPos.z ? z - this._setFoodTouchPos.z : this._setFoodTouchPos.z - z;
+          //     let chooseedFoodSize: ISize = { x: 1, y: 1, z: 1 };
+          //     if (this.choosedBasket != -1) {
+          //         // chooseedFoodSize = this._modelsData[this._foodKindData[this.choosedBasket]];
+          //         chooseedFoodSize = SBX_Constants.itemData.get(this._foodKindData[this.choosedBasket]);
+          //     }
+          //     if (disx < chooseedFoodSize.x && disz < chooseedFoodSize.z) return;
+          //     if (this.choosedBasket === -1) return;
+          //     if (this._foodNumInBasket[this.choosedBasket] === 0) {
+          //         this._basketNodes[this.choosedBasket].getComponent(SBX_Basket).setBasketShake();
+          //         return;
+          //     }
+          //     this._onSetFoodStateTouchMove(x, z);
+          //     this._reportGuidingSetPos(event);
+          //     this._setFoodTouchPos.x = x;
+          //     this._setFoodTouchPos.z = z;
+          // }
+          // if (this._touchMoveState === touchMoveState.SetBack) this._onSetBackStateTouchMove(x, z);
+        }
+        /**放置食物的touchMove事件,放置模式 */
+        ;
 
-        _proto._onCollisionEnter = function _onCollisionEnter(event) {// const itemNode = event.otherCollider.node;
-          // const basketNode = event.selfCollider.node;
-          // const itemComp = itemNode.getComponent(Item);
-          // const basketComp = basketNode.getComponent(Basket);
-          // if (!itemComp || !basketComp) return;
-          // if (itemComp.itemId === basketComp.itemId) {
-          //     itemComp.canReciveTouchEvent = false;
-          //     itemComp.hideCollider();
-          //     basketComp.setOneItem(itemNode);
-          //     this._curSettedItemNum++;
+        _proto._onSetFoodStateTouchMove = function _onSetFoodStateTouchMove(x, z) {// const foodId = this._foodKindData[this.choosedBasket];
+          // const boxComp = this._boxNodes[this.curOpenBoxIndex].getComponent(SBX_Box);
+          // const setRes = this._judgeCanSetFoodInBox(this.curOpenBoxIndex, x, z, foodId);
+          // if (setRes.canSet) {
+          //     let food = this._basketFoodNodes[this.choosedBasket].pop();
+          //     this._foodNumInBasket[this.choosedBasket]--;
+          //     // 判断限时挑战篮子是否完成
+          //     if (this.basketTiming && this._foodNumInBasket[this.choosedBasket] === 0) {
+          //         const basketComp = this._basketNodes[this.choosedBasket].getComponent(SBX_Basket);
+          //         basketComp.successBasketTiming();
+          //     }
+          //     this._setOneFoodInBox(this.curOpenBoxIndex, setRes.setPos.x, setRes.setPos.y, setRes.setPos.z, food);
+          //     boxComp.isOpen ? (boxComp.setEmpty = false) : (boxComp.isEmpty = false);
+          //     // 判断显示挑战盒子是否完成
+          //     if (this.boxTiming && this._judgeBoxIsFull(this.curOpenBoxIndex)) {
+          //         boxComp.successBoxTiming();
+          //     }
+          //     const foodData = SBX_Constants.itemData.get(foodId);
+          //     this._addProgress(foodData);
+          //     this._judgeSetFoodMove(setRes, foodData);
+          //     this.judgeGameSuccess();
           // } else {
-          //     if (itemComp.canReciveTouchEvent) {
-          //         this._setItemOnFloor(itemNode);
+          //     this._showRedFood(this.curOpenBoxIndex, x, z, foodId);
+          // }
+        }
+        /**判断第boxId个盒子的这个位置能否放下食物 */
+        ;
+
+        _proto._judgeCanSetFoodInBox = function _judgeCanSetFoodInBox(boxId, x, z, foodId) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const boxSize = boxComp.objBoxSize;
+          // let canSet: boolean = false;
+          // let setPos = { x: -1, y: -1, z: -1 };
+          // if (!boxComp.canSetFood) return { canSet: canSet, setPos: setPos };
+          // const foodSize = SBX_Constants.itemData.get(foodId);
+          // const startx = x - (foodSize.x - 1) < 0 ? 0 : x - (foodSize.x - 1);
+          // const endz = z - (foodSize.z - 1) < 0 ? 0 : z - (foodSize.z - 1);
+          // xiout: for (let xi = startx; xi <= x; xi++) {
+          //     ziout: for (let zi = z; zi >= endz; zi--) {
+          //         const yiMax = SBX_Constants.levelMode === LevelMode.Food ? boxSize.y - foodSize.y : 0;
+          //         yiout: for (let yi = 0; yi <= yiMax; yi++) {
+          //             let thisCanSet = true;
+          //             //对于yi高度,在x-y-z空间得够放
+          //             const xMax = xi + foodSize.x;
+          //             const yMax = yi + foodSize.y;
+          //             const zMax = zi + foodSize.z;
+          //             const sizex = boxSize.x - 1;
+          //             const sizey = boxSize.y - 1;
+          //             const sizez = boxSize.z - 1;
+          //             iout: for (let i = xi; i < xMax; i++) {
+          //                 for (let j = yi; j < yMax; j++) {
+          //                     for (let k = zi; k < zMax; k++) {
+          //                         if (i > sizex || j > sizey || k > sizez || this._boxFoodNodes[boxId][i][j][k]) {
+          //                             thisCanSet = false;
+          //                             break iout;
+          //                         }
+          //                     }
+          //                 }
+          //             }
+          //             //当yi不为0时,底部必须是被填满的,不然不能放
+          //             if (yi != 0) {
+          //                 const yDown = yi - 1;
+          //                 iout: for (let i = xi; i < xMax; i++) {
+          //                     for (let k = zi; k < zMax; k++) {
+          //                         if (i > sizex || k > sizez || !this._boxFoodNodes[boxId][i][yDown][k]) {
+          //                             thisCanSet = false;
+          //                             break iout;
+          //                         }
+          //                     }
+          //                 }
+          //             }
+          //             if (thisCanSet) {
+          //                 // edit by hehao
+          //                 setPos.x = xi;
+          //                 setPos.y = yi;
+          //                 setPos.z = zi;
+          //                 // setPos = { x: xi, y: yi, z: zi };
+          //                 canSet = true;
+          //                 break xiout;
+          //             }
+          //         }
+          //     }
+          // }
+          // return { canSet: canSet, setPos: setPos };
+        }
+        /**放置一个食物到盒子里 */
+        ;
+
+        _proto._setOneFoodInBox = function _setOneFoodInBox(boxId, x, y, z, food) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const foodComp = food.getComponent(SBX_Food);
+          // food.parent = null;
+          // boxComp.FoodNode.addChild(food);
+          // food.setPosition(x, y, -z);
+          // foodComp.playScaleAnim();
+          // const foodSize: IItemModelData = SBX_Constants.itemData.get(foodComp.foodId);
+          // const xMax = x + foodSize.x;
+          // const yMax = y + foodSize.y;
+          // const zMax = z + foodSize.z;
+          // for (let i = x; i < xMax; i++)
+          //     for (let j = y; j < yMax; j++)
+          //         for (let k = z; k < zMax; k++) {
+          //             this._boxFoodNodes[boxId][i][j][k] = { node: food, x: x, y: y, z: z, isStatic: false };
+          //         }
+        }
+        /**放置食物的touchMove事件,放回模式 */
+        ;
+
+        _proto._onSetBackStateTouchMove = function _onSetBackStateTouchMove(x, z) {// const removeObj = this._removeFoodFromBox(this.curOpenBoxIndex, x, z);
+          // for (let i = 0; i < this._foodKindData.length; i++) {
+          //     if (removeObj.removeFoodId === this._foodKindData[i]) {
+          //         this._removeFoodGuide();
+          //         this._returnOneFoodInBasket(i, removeObj.node);
+          //         this._foodNumInBasket[i]++;
+          //         const foodData = SBX_Constants.itemData.get(removeObj.removeFoodId);
+          //         let v = 0;
+          //         if (SBX_Constants.levelMode === LevelMode.Food) v = foodData.x * foodData.y * foodData.z;
+          //         else v = foodData.x * foodData.z;
+          //         this._curfoodVolume -= v;
+          //         SBX_Constants.SBXGameScene.setProgress(this._curfoodVolume / this._foodVolume);
           //     }
           // }
         }
-        /**篮子消失 */
+        /**从盒子里移除物品,判断在(x,z)这个点上该移除哪个物体 */
         ;
 
-        _proto.setBasketDisappear = function setBasketDisappear(id) {// this._canScroll = false;
-          // for (let i = id + 1; i < this._basketNodes.length; i++) {
-          //     let position = cc.v3();
-          //     this._basketNodes[i].getPosition(position);
-          //     cc.Tween.stopAllByTarget(this._basketNodes[i]);
-          //     cc.tween(this._basketNodes[i])
-          //         .delay(0.4)
-          //         .to(0.2, { position: position.subtract(cc.v3(basketLen, 0, 0)) })
-          //         .call(() => {
-          //             this._canScroll = true;
-          //         })
-          //         .start();
+        _proto._removeFoodFromBox = function _removeFoodFromBox(boxId, x, z) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const boxSize = boxComp.objBoxSize;
+          // let removeObj = { removeFoodId: -1, node: null };
+          // for (let yi = boxSize.y - 1; yi >= 0; yi--) {
+          //     if (this._boxFoodNodes[boxId][x][yi][z]) {
+          //         if (this._judgeCanRemoveFoodFromBox(boxId, x, yi, z)) {
+          //             SBX_Ads.playAudio(AudioNames.NaQi);
+          //             removeObj = this._removeOneFoodFromBox(boxId, x, yi, z);
+          //             this._removeEmptySubDailyUseTime(boxId);
+          //             return removeObj;
+          //         }
+          //     }
           // }
-          // if (id + 1 >= this._basketNodes.length) {
-          //     this._canScroll = true;
+          // return removeObj;
+        }
+        /**判断是否可以从盒子里移除这个物品,如果上面有东西压着,则不能移除 */
+        ;
+
+        _proto._judgeCanRemoveFoodFromBox = function _judgeCanRemoveFoodFromBox(boxId, x, y, z) {// if (SBX_Constants.levelMode === LevelMode.Cosmetics) return true;
+          // const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const boxSize = boxComp.objBoxSize;
+          // const node = this._boxFoodNodes[boxId][x][y][z].node;
+          // const startx = this._boxFoodNodes[boxId][x][y][z].x;
+          // const starty = this._boxFoodNodes[boxId][x][y][z].y;
+          // const startz = this._boxFoodNodes[boxId][x][y][z].z;
+          // const Food = node.getComponent(SBX_Food);
+          // const foodSize = SBX_Constants.itemData.get(Food.foodId);
+          // if (SBX_Constants.dailyInfo.isDailyChallenge) {
+          //     if (this._boxFoodNodes[boxId][x][y][z].isStatic) {
+          //         SBX_Logger.log("每日挑战固定物品，不可移除！");
+          //         return false;
+          //     }
+          // }
+          // if (y === boxSize.y - 1) {
+          //     return true; //在盒子的最上方,可以移除
+          // } else {
+          //     const yi = y + 1;
+          //     for (let xi = startx; xi < startx + foodSize.x; xi++) {
+          //         for (let zi = startz; zi < startz + foodSize.z; zi++) {
+          //             if (this._boxFoodNodes[boxId][xi][yi][zi]) {
+          //                 return false;
+          //             }
+          //         }
+          //     }
+          //     return true;
           // }
         }
-        /**滑动时的Update */
+        /**从盒子里移除一个物品 */
         ;
 
-        _proto._onScrollUpdate = function _onScrollUpdate() {// if (this._curScrollSpeed === 0) return;
-          // const position = cc.v3();
-          // this.BasketNode.getPosition(position);
-          // position.x += this._curScrollSpeed;
-          // if (position.x < -(basketLen * this._itemKindData.length)) {
-          //     position.x = -(basketLen * this._itemKindData.length)
+        _proto._removeOneFoodFromBox = function _removeOneFoodFromBox(boxId, x, y, z) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const node = this._boxFoodNodes[boxId][x][y][z].node;
+          // const Food = node.getComponent(SBX_Food);
+          // const foodSize = SBX_Constants.itemData.get(Food.foodId);
+          // Food.resetAllAnim();
+          // const startx = this._boxFoodNodes[boxId][x][y][z].x;
+          // const starty = this._boxFoodNodes[boxId][x][y][z].y;
+          // const startz = this._boxFoodNodes[boxId][x][y][z].z;
+          // const endx = startx + foodSize.x;
+          // const endy = starty + foodSize.y;
+          // const endz = startz + foodSize.z;
+          // for (let i = startx; i < endx; i++)
+          //     for (let j = starty; j < endy; j++)
+          //         for (let k = startz; k < endz; k++) {
+          //             this._boxFoodNodes[boxId][i][j][k] = null;
+          //         }
+          // if (this._judgeBoxIsEmpty(boxId)) {
+          //     boxComp.isOpen ? (boxComp.setEmpty = true) : (boxComp.isEmpty = true);
+          //     this._stopShakeAllFoodInBox(boxId);
           // }
-          // if (position.x > scrollLeft) {
-          //     position.x = scrollLeft;
-          // }
-          // this.BasketNode.setPosition(position);
-          // if (this._curScrollSpeed < 0) {
-          //     this._curScrollSpeed = (this._curScrollSpeed + loseSpeed >= 0) ? 0 : this._curScrollSpeed + loseSpeed;
-          // } else {
-          //     this._curScrollSpeed = (this._curScrollSpeed - loseSpeed <= 0) ? 0 : this._curScrollSpeed - loseSpeed;
-          // }
+          // return { removeFoodId: Food.foodId, node: node };
         };
 
-        _proto._letGoFood = function _letGoFood() {// if (!this._touchingBallNode) return;
-          // // this._touchingBallNode.getComponent(Find_Item).onUnchoose(this._velocityNow);
-          // this._velocityNow = cc.v3();
-          // this._touchingBallNode = null;
-        };
-
-        _proto._onScrollTouchMove = function _onScrollTouchMove(event) {// const pos = cc.v2();
-          // event.getLocation(pos);
-          // let pos_x = pos.x;
-          // let previousPos_x = event.getPreviousLocation().x;
-          // if (pos_x > previousPos_x) {
-          //     //玩家向右滑
-          //     if (this._curScrollSpeed >= 0) {
-          //         //本来就在向右行驶或静止
-          //         this._curScrollSpeed = scrollSpeed;
-          //     } else {
-          //         this._curScrollSpeed = 0;
-          //     }
-          // } else {
-          //     //玩家向左滑
-          //     if (this._curScrollSpeed <= 0) {
-          //         //本来就在向左行驶或静止
-          //         this._curScrollSpeed = -scrollSpeed;
-          //     } else {
-          //         this._curScrollSpeed = 0;
-          //     }
-          // }
+        _proto._removeEmptySubDailyUseTime = function _removeEmptySubDailyUseTime(boxId) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // if (boxComp.isOpen && this._judgeBoxIsEmpty(boxId)) SBX_Constants.SBXGameScene.subSetBackUseTime();
         }
-        /**检查物体位置有无异常 */
+        /**展示红色食物特效 */
         ;
 
-        _proto._checkAllItemsPosition = function _checkAllItemsPosition() {// for (let i = 0; i < this._itemNodes.length; i++) {
-          //     const node = this._itemNodes[i];
-          //     const comp = node.getComponent(Item);
-          //     if (!comp.canReciveTouchEvent) continue;
-          //     let shouldReset = this._checkNodePosition(node);
-          //     if (shouldReset) {
-          //         this._setItemOnFloor(node);
-          //     }
-          // }
-          // for (let i = 0; i < this._extraItemNodes.length; i++) {
-          //     const node = this._extraItemNodes[i];
-          //     const comp = node.getComponent(Item);
-          //     if (!comp.canReciveTouchEvent) continue;
-          //     let shouldReset = this._checkNodePosition(node);
-          //     if (shouldReset) {
-          //         this._setItemOnFloor(node);
+        _proto._showRedFood = function _showRedFood(boxId, x, z, id) {// const boxComp = this._boxNodes[boxId].getComponent(SBX_Box);
+          // const boxSize = boxComp.objBoxSize;
+          // if (!boxComp.canSetFood) return;
+          // yiout: for (let yi = boxSize.y - 1; yi >= -1; yi--) {
+          //     if (yi === -1 || this._boxFoodNodes[boxId][x][yi][z]) {
+          //         let y = yi + 1;
+          //         if (y >= boxSize.y) break yiout;
+          //         let food = cc.instantiate(this.foodPre);
+          //         boxComp.FoodNode.addChild(food);
+          //         const Food = food.getComponent(SBX_Food);
+          //         Food.init(id);
+          //         food.setPosition(x, y, -z);
+          //         Food.changeMaterial(FoodMaterialIds.RED);
+          //         this.scheduleOnce(() => {
+          //             Food.onPutAway();
+          //             food.destroy();
+          //         }, 0.2);
+          //         break yiout;
           //     }
           // }
         };
 
-        _proto._checkNodePosition = function _checkNodePosition(node) {// let shouldReset: boolean = false;
-          // if (node.position.x < -10) {
-          //     // SBX_Logger.log("检测到有物体位置过左");
-          //     shouldReset = true;
-          // }
-          // if (node.position.y < 0) {
-          //     // SBX_Logger.log("检测到有物体位置过下");
-          //     shouldReset = true;
-          // }
-          // if (node.position.z < -15) {
-          //     // SBX_Logger.log("检测到有物体位置过后");
-          //     shouldReset = true;
-          // }
-          // if (node.position.x > 10) {
-          //     // SBX_Logger.log("检测到有物体位置过右");
-          //     shouldReset = true;
-          // }
-          // if (node.position.y > 20) {
-          //     // SBX_Logger.log("检测到有物体位置过上");
-          //     shouldReset = true;
-          // }
-          // if (node.position.z > 13) {
-          //     // SBX_Logger.log("检测到有物体位置过前");
-          //     shouldReset = true;
-          // }
-          // return shouldReset;
+        _proto._returnOneFoodInBasket = function _returnOneFoodInBasket(basketId, node) {// const rand = Math.floor(Math.random() * this._foodSettedPositions[basketId].length);
+          // const pos = this._foodSettedPositions[basketId][rand];
+          // const jitter = (Math.random() - 0.5) * 0.5;
+          // const basketComp = this._basketNodes[basketId].getComponent(SBX_Basket);
+          // node.parent = null;
+          // basketComp.foodStartNode.addChild(node);
+          // node.setPosition(pos.x + jitter, pos.y, pos.z + jitter);
+          // this._basketFoodNodes[basketId].push(node);
         }
         /**
         * 工具函数---判断是否在这个区域内
@@ -1303,10 +1340,10 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
   };
 });
 
-System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './sampleView.ts'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, director, Component;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, director, Component, sampleView;
 
   return {
     setters: [function (module) {
@@ -1320,6 +1357,8 @@ System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.
       Node = module.Node;
       director = module.director;
       Component = module.Component;
+    }, function (module) {
+      sampleView = module.sampleView;
     }],
     execute: function () {
       var _dec, _dec2, _class, _class2, _descriptor;
@@ -1360,7 +1399,8 @@ System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.
         };
 
         _proto.clickExample = function clickExample() {
-          this.sampleView.active = true;
+          // this.sampleView.active=true;
+          this.sampleView.getComponent(sampleView).initView();
         };
 
         return Home;
@@ -1802,11 +1842,11 @@ System.register("chunks:///_virtual/kvItem.ts", ['./rollupPluginModLoBabelHelper
   };
 });
 
-System.register("chunks:///_virtual/main", ['./Data.ts', './Basket.ts', './Game.ts', './Item.ts', './ItemList.ts', './ItemView.ts', './Main.ts', './Home.ts', './kvItem.ts', './sampleItem.ts', './sampleView.ts', './dweb_player.ts'], function () {
+System.register("chunks:///_virtual/main", ['./Data.ts', './Basket.ts', './Game.ts', './Item.ts', './ItemList.ts', './ItemView.ts', './Main.ts', './MoveGame.ts', './Home.ts', './kvItem.ts', './sampleItem.ts', './sampleView.ts', './dweb_player.ts'], function () {
   'use strict';
 
   return {
-    setters: [null, null, null, null, null, null, null, null, null, null, null, null],
+    setters: [null, null, null, null, null, null, null, null, null, null, null, null, null],
     execute: function () {}
   };
 });
@@ -1903,10 +1943,27 @@ System.register("chunks:///_virtual/Main.ts", ['./rollupPluginModLoBabelHelpers.
   };
 });
 
+System.register("chunks:///_virtual/MoveGame.ts", ['cc'], function () {
+  'use strict';
+
+  var cclegacy;
+  return {
+    setters: [function (module) {
+      cclegacy = module.cclegacy;
+    }],
+    execute: function () {
+      // import * as cc from "cc";
+      cclegacy._RF.push({}, "fbfbbIxKARKOrAoq3ZeVvt1", "MoveGame", undefined);
+
+      cclegacy._RF.pop();
+    }
+  };
+});
+
 System.register("chunks:///_virtual/sampleItem.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Sprite, Node, Component;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Sprite, LabelComponent, Component;
 
   return {
     setters: [function (module) {
@@ -1918,7 +1975,7 @@ System.register("chunks:///_virtual/sampleItem.ts", ['./rollupPluginModLoBabelHe
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
       Sprite = module.Sprite;
-      Node = module.Node;
+      LabelComponent = module.LabelComponent;
       Component = module.Component;
     }],
     execute: function () {
@@ -1928,7 +1985,7 @@ System.register("chunks:///_virtual/sampleItem.ts", ['./rollupPluginModLoBabelHe
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var sampleItem = exports('sampleItem', (_dec = ccclass('sampleItem'), _dec2 = property(Sprite), _dec3 = property(Node), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var sampleItem = exports('sampleItem', (_dec = ccclass('sampleItem'), _dec2 = property(Sprite), _dec3 = property(LabelComponent), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(sampleItem, _Component);
 
         function sampleItem() {
@@ -1954,8 +2011,15 @@ System.register("chunks:///_virtual/sampleItem.ts", ['./rollupPluginModLoBabelHe
         _proto.update = function update(deltaTime) {};
 
         _proto.initView = function initView(name, pic) {
-          this.nameLab.string = name;
-          this.picNode.spriteFrame = pic;
+          var _this2 = this;
+
+          this.scheduleOnce(function () {
+            _this2.nameLab.string = name;
+
+            _this2.nameLab.updateRenderData(true);
+
+            _this2.picNode.spriteFrame = pic;
+          });
         };
 
         return sampleItem;
@@ -1983,7 +2047,7 @@ System.register("chunks:///_virtual/sampleItem.ts", ['./rollupPluginModLoBabelHe
 System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './sampleItem.ts'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Prefab, instantiate, Component, sampleItem;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Prefab, assetManager, SpriteFrame, instantiate, Component, sampleItem;
 
   return {
     setters: [function (module) {
@@ -1996,19 +2060,21 @@ System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHe
       _decorator = module._decorator;
       Node = module.Node;
       Prefab = module.Prefab;
+      assetManager = module.assetManager;
+      SpriteFrame = module.SpriteFrame;
       instantiate = module.instantiate;
       Component = module.Component;
     }, function (module) {
       sampleItem = module.sampleItem;
     }],
     execute: function () {
-      var _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2;
+      var _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
 
       cclegacy._RF.push({}, "6df49XBoJ9M35hJPuIfVgFL", "sampleView", undefined);
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var sampleView = exports('sampleView', (_dec = ccclass('sampleView'), _dec2 = property(Node), _dec3 = property(Prefab), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var sampleView = exports('sampleView', (_dec = ccclass('sampleView'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec5 = property(Prefab), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(sampleView, _Component);
 
         function sampleView() {
@@ -2024,6 +2090,10 @@ System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHe
 
           _initializerDefineProperty(_this, "itemView", _descriptor2, _assertThisInitialized(_this));
 
+          _initializerDefineProperty(_this, "detailsView", _descriptor3, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "kvItem", _descriptor4, _assertThisInitialized(_this));
+
           return _this;
         }
 
@@ -2036,14 +2106,40 @@ System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHe
         };
 
         _proto.initView = function initView(itemList) {
-          this.content.removeAllChildren();
+          var _this2 = this;
 
-          for (var i = 0; i < itemList; i++) {
-            var node = instantiate(this.itemView);
-            var comp = node.getComponent(sampleItem);
-            comp.initView("" + i, null);
-            this.content.addChild(node);
-          }
+          this.content.removeAllChildren();
+          assetManager.loadBundle('texture', function (err, bundle) {
+            if (err) {
+              console.error('Failed to load bundle:', err);
+              return;
+            }
+
+            bundle.loadDir('example', function (err, assets) {
+              if (err) {
+                console.error('Failed to load directory:', err);
+                return;
+              }
+
+              var spriteFrames = assets.filter(function (asset) {
+                return asset instanceof SpriteFrame;
+              }); // 遍历 spriteFrames 数组，处理每个 SpriteFrame
+
+              for (var i = 0; i < spriteFrames.length; i++) {
+                var spriteFrame = spriteFrames[i]; // 在此处处理 spriteFrame 的逻辑
+
+                var node = instantiate(_this2.itemView);
+                var comp = node.getComponent(sampleItem);
+                comp.initView("" + spriteFrame.name, spriteFrame);
+
+                _this2.content.addChild(node); // 示例：打印 SpriteFrame 的名称
+
+
+                if (i == spriteFrames.length - 1) _this2.node.active = true;
+              }
+            });
+          });
+          return;
         };
 
         return sampleView;
@@ -2055,6 +2151,20 @@ System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHe
           return null;
         }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "itemView", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "detailsView", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "kvItem", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,

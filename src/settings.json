@@ -6,8 +6,8 @@
         "height": 1600,
         "policy": 4
     },
-    "platform": "web-desktop",
-    "exactFitScreen": false,
+    "platform": "web-mobile",
+    "exactFitScreen": true,
     "bundleVers": {},
     "subpackages": [],
     "remoteBundles": [],
@@ -56,5 +56,6 @@
     },
     "scriptPackages": [
         "./src/chunks/bundle.js"
-    ]
+    ],
+    "orientation": "portrait"
 }

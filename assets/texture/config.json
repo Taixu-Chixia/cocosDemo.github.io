@@ -1,0 +1,432 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "texture",
+    "deps": [
+        "main"
+    ],
+    "uuids": [
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf",
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf@6c48a",
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf@f9941",
+        "0558e9620",
+        "07193ecd2",
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9",
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9@6c48a",
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9@f9941",
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8",
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8@6c48a",
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8@f9941",
+        "2199a045-6bc3-4551-ac4d-3c5074e79735",
+        "2199a045-6bc3-4551-ac4d-3c5074e79735@6c48a",
+        "2199a045-6bc3-4551-ac4d-3c5074e79735@f9941",
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32",
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32@6c48a",
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32@f9941",
+        "2f492627-133b-431c-9a3e-793709515acc",
+        "2f492627-133b-431c-9a3e-793709515acc@6c48a",
+        "2f492627-133b-431c-9a3e-793709515acc@f9941",
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1",
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1@6c48a",
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1@f9941",
+        "4d497ae3-4115-444f-b565-38905beadc28",
+        "4d497ae3-4115-444f-b565-38905beadc28@6c48a",
+        "4d497ae3-4115-444f-b565-38905beadc28@f9941",
+        "572bfb61-7677-4452-ac6f-be0bda376cf2",
+        "572bfb61-7677-4452-ac6f-be0bda376cf2@6c48a",
+        "572bfb61-7677-4452-ac6f-be0bda376cf2@f9941",
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc",
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc@6c48a",
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc@f9941",
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7",
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7@6c48a",
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7@f9941",
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4",
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4@6c48a",
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4@f9941",
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14",
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14@6c48a",
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14@f9941",
+        "898df96d-fb05-4f0f-8879-6cae8470b455",
+        "898df96d-fb05-4f0f-8879-6cae8470b455@6c48a",
+        "898df96d-fb05-4f0f-8879-6cae8470b455@f9941",
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c",
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@6c48a",
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@f9941",
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9",
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9@6c48a",
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9@f9941",
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339",
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339@6c48a",
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339@f9941",
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2",
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2@6c48a",
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2@f9941",
+        "d691bc31-19d5-49a9-a029-af3de98195e6",
+        "d691bc31-19d5-49a9-a029-af3de98195e6@6c48a",
+        "d691bc31-19d5-49a9-a029-af3de98195e6@f9941",
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd",
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd@6c48a",
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd@f9941",
+        "e722969c-fee8-454e-8481-e437e1591ec6",
+        "e722969c-fee8-454e-8481-e437e1591ec6@6c48a",
+        "e722969c-fee8-454e-8481-e437e1591ec6@f9941"
+    ],
+    "paths": {
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2": [
+            "example/图10：黄梅作品《知音同行、感恩有我》",
+            "cc.ImageAsset"
+        ],
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2@6c48a": [
+            "example/图10：黄梅作品《知音同行、感恩有我》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "ba1b4686-26b1-47fd-91df-e61f75b954b2@f9941": [
+            "example/图10：黄梅作品《知音同行、感恩有我》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32": [
+            "example/图11：龙感湖作品《共筑中国梦》",
+            "cc.ImageAsset"
+        ],
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32@6c48a": [
+            "example/图11：龙感湖作品《共筑中国梦》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "27df2fbe-e1e3-4b68-9e78-26208f7c4d32@f9941": [
+            "example/图11：龙感湖作品《共筑中国梦》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9": [
+            "example/图12：初心主题陈列作品",
+            "cc.ImageAsset"
+        ],
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9@6c48a": [
+            "example/图12：初心主题陈列作品/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9@f9941": [
+            "example/图12：初心主题陈列作品/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "d691bc31-19d5-49a9-a029-af3de98195e6": [
+            "example/图13：暖色系陈列图片",
+            "cc.ImageAsset"
+        ],
+        "d691bc31-19d5-49a9-a029-af3de98195e6@6c48a": [
+            "example/图13：暖色系陈列图片/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "d691bc31-19d5-49a9-a029-af3de98195e6@f9941": [
+            "example/图13：暖色系陈列图片/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc": [
+            "example/图14：端午陈列案例",
+            "cc.ImageAsset"
+        ],
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc@6c48a": [
+            "example/图14：端午陈列案例/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "6510b8d3-c5b3-4864-959d-4c3d705ca7fc@f9941": [
+            "example/图14：端午陈列案例/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "4d497ae3-4115-444f-b565-38905beadc28": [
+            "example/图15：视窗主题陈列",
+            "cc.ImageAsset"
+        ],
+        "4d497ae3-4115-444f-b565-38905beadc28@6c48a": [
+            "example/图15：视窗主题陈列/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "4d497ae3-4115-444f-b565-38905beadc28@f9941": [
+            "example/图15：视窗主题陈列/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "2199a045-6bc3-4551-ac4d-3c5074e79735": [
+            "example/图16：终端特色陈列1",
+            "cc.ImageAsset"
+        ],
+        "2199a045-6bc3-4551-ac4d-3c5074e79735@6c48a": [
+            "example/图16：终端特色陈列1/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "2199a045-6bc3-4551-ac4d-3c5074e79735@f9941": [
+            "example/图16：终端特色陈列1/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14": [
+            "example/图17 品味百年1916主题陈列",
+            "cc.ImageAsset"
+        ],
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14@6c48a": [
+            "example/图17 品味百年1916主题陈列/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "81005992-e9d4-429b-ae0f-d2e29bbdcc14@f9941": [
+            "example/图17 品味百年1916主题陈列/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd": [
+            "example/图18 终端特色陈列2",
+            "cc.ImageAsset"
+        ],
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd@6c48a": [
+            "example/图18 终端特色陈列2/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "dd7d3253-393b-4b75-a95d-57a781e6e7dd@f9941": [
+            "example/图18 终端特色陈列2/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9": [
+            "example/图19  罗田小叶子便利店陈列",
+            "cc.ImageAsset"
+        ],
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9@6c48a": [
+            "example/图19  罗田小叶子便利店陈列/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "0ac43c7d-564b-4f57-87f6-3bf452a5adc9@f9941": [
+            "example/图19  罗田小叶子便利店陈列/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c": [
+            "example/图1：黄州作品《同心迎盛会，携手向未来》",
+            "cc.ImageAsset"
+        ],
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@6c48a": [
+            "example/图1：黄州作品《同心迎盛会，携手向未来》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@f9941": [
+            "example/图1：黄州作品《同心迎盛会，携手向未来》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "e722969c-fee8-454e-8481-e437e1591ec6": [
+            "example/图20 罗田何红波店陈列喜迎二十大",
+            "cc.ImageAsset"
+        ],
+        "e722969c-fee8-454e-8481-e437e1591ec6@6c48a": [
+            "example/图20 罗田何红波店陈列喜迎二十大/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "e722969c-fee8-454e-8481-e437e1591ec6@f9941": [
+            "example/图20 罗田何红波店陈列喜迎二十大/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339": [
+            "example/图21  罗田徐芳一起向未来主题陈列",
+            "cc.ImageAsset"
+        ],
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339@6c48a": [
+            "example/图21  罗田徐芳一起向未来主题陈列/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "9be80b0c-a648-4b72-a65f-7ea91d4a3339@f9941": [
+            "example/图21  罗田徐芳一起向未来主题陈列/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7": [
+            "example/图2：红安作品《红色老街 现代小店》",
+            "cc.ImageAsset"
+        ],
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7@6c48a": [
+            "example/图2：红安作品《红色老街 现代小店》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "6a860b61-2949-470d-b38b-f33cfc7cbbc7@f9941": [
+            "example/图2：红安作品《红色老街 现代小店》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4": [
+            "example/图3：英山作品《中国红•新启程》",
+            "cc.ImageAsset"
+        ],
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4@6c48a": [
+            "example/图3：英山作品《中国红•新启程》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "7459db5d-4ac4-4763-9d98-ced1eeeba1e4@f9941": [
+            "example/图3：英山作品《中国红•新启程》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "898df96d-fb05-4f0f-8879-6cae8470b455": [
+            "example/图4：武穴作品 《喜迎二十大，永远跟党走，启航新征程》",
+            "cc.ImageAsset"
+        ],
+        "898df96d-fb05-4f0f-8879-6cae8470b455@6c48a": [
+            "example/图4：武穴作品 《喜迎二十大，永远跟党走，启航新征程》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "898df96d-fb05-4f0f-8879-6cae8470b455@f9941": [
+            "example/图4：武穴作品 《喜迎二十大，永远跟党走，启航新征程》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8": [
+            "example/图5：团风作品《向日葵·初心》",
+            "cc.ImageAsset"
+        ],
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8@6c48a": [
+            "example/图5：团风作品《向日葵·初心》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8@f9941": [
+            "example/图5：团风作品《向日葵·初心》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1": [
+            "example/图6：麻城作品《知音携手迎盛会 共同缔造奔小康》",
+            "cc.ImageAsset"
+        ],
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1@6c48a": [
+            "example/图6：麻城作品《知音携手迎盛会 共同缔造奔小康》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1@f9941": [
+            "example/图6：麻城作品《知音携手迎盛会 共同缔造奔小康》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "572bfb61-7677-4452-ac6f-be0bda376cf2": [
+            "example/图7：浠水《爱我中华》",
+            "cc.ImageAsset"
+        ],
+        "572bfb61-7677-4452-ac6f-be0bda376cf2@6c48a": [
+            "example/图7：浠水《爱我中华》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "572bfb61-7677-4452-ac6f-be0bda376cf2@f9941": [
+            "example/图7：浠水《爱我中华》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "2f492627-133b-431c-9a3e-793709515acc": [
+            "example/图8：罗田作品《同心迎盛会》",
+            "cc.ImageAsset"
+        ],
+        "2f492627-133b-431c-9a3e-793709515acc@6c48a": [
+            "example/图8：罗田作品《同心迎盛会》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "2f492627-133b-431c-9a3e-793709515acc@f9941": [
+            "example/图8：罗田作品《同心迎盛会》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf": [
+            "example/图9：蕲春作品《喜迎盛世庆华诞，鹤鸣九霄耀中华》",
+            "cc.ImageAsset"
+        ],
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf@6c48a": [
+            "example/图9：蕲春作品《喜迎盛世庆华诞，鹤鸣九霄耀中华》/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "0088dfa3-9329-4d6b-8edc-7cc23ba283cf@f9941": [
+            "example/图9：蕲春作品《喜迎盛世庆华诞，鹤鸣九霄耀中华》/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {
+        "0558e9620": [
+            "0ac43c7d-564b-4f57-87f6-3bf452a5adc9",
+            "2f492627-133b-431c-9a3e-793709515acc",
+            "4d497ae3-4115-444f-b565-38905beadc28",
+            "6a860b61-2949-470d-b38b-f33cfc7cbbc7",
+            "9be80b0c-a648-4b72-a65f-7ea91d4a3339",
+            "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8",
+            "27df2fbe-e1e3-4b68-9e78-26208f7c4d32",
+            "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1",
+            "0088dfa3-9329-4d6b-8edc-7cc23ba283cf",
+            "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9",
+            "572bfb61-7677-4452-ac6f-be0bda376cf2",
+            "898df96d-fb05-4f0f-8879-6cae8470b455",
+            "2199a045-6bc3-4551-ac4d-3c5074e79735",
+            "6510b8d3-c5b3-4864-959d-4c3d705ca7fc",
+            "7459db5d-4ac4-4763-9d98-ced1eeeba1e4",
+            "81005992-e9d4-429b-ae0f-d2e29bbdcc14",
+            "ba1b4686-26b1-47fd-91df-e61f75b954b2",
+            "d691bc31-19d5-49a9-a029-af3de98195e6",
+            "dd7d3253-393b-4b75-a95d-57a781e6e7dd",
+            "e722969c-fee8-454e-8481-e437e1591ec6"
+        ],
+        "07193ecd2": [
+            "0ac43c7d-564b-4f57-87f6-3bf452a5adc9@6c48a",
+            "2f492627-133b-431c-9a3e-793709515acc@6c48a",
+            "4d497ae3-4115-444f-b565-38905beadc28@6c48a",
+            "6a860b61-2949-470d-b38b-f33cfc7cbbc7@6c48a",
+            "9be80b0c-a648-4b72-a65f-7ea91d4a3339@6c48a",
+            "12ea7c7d-eec9-4cfe-82f2-28183bb3adb8@6c48a",
+            "27df2fbe-e1e3-4b68-9e78-26208f7c4d32@6c48a",
+            "33ebcfb9-460b-40b0-b8c4-0863e6b91ef1@6c48a",
+            "0088dfa3-9329-4d6b-8edc-7cc23ba283cf@6c48a",
+            "92bd32a2-6d37-42bb-a7e8-16a25a7ffab9@6c48a",
+            "572bfb61-7677-4452-ac6f-be0bda376cf2@6c48a",
+            "898df96d-fb05-4f0f-8879-6cae8470b455@6c48a",
+            "2199a045-6bc3-4551-ac4d-3c5074e79735@6c48a",
+            "6510b8d3-c5b3-4864-959d-4c3d705ca7fc@6c48a",
+            "7459db5d-4ac4-4763-9d98-ced1eeeba1e4@6c48a",
+            "81005992-e9d4-429b-ae0f-d2e29bbdcc14@6c48a",
+            "ba1b4686-26b1-47fd-91df-e61f75b954b2@6c48a",
+            "d691bc31-19d5-49a9-a029-af3de98195e6@6c48a",
+            "dd7d3253-393b-4b75-a95d-57a781e6e7dd@6c48a",
+            "e722969c-fee8-454e-8481-e437e1591ec6@6c48a"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c",
+        "0",
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@6c48a",
+        "0",
+        "8b19609d-55df-4fef-b4f3-1e8ec984630c@f9941",
+        "0"
+    ],
+    "debug": true,
+    "extensionMap": {}
+}
