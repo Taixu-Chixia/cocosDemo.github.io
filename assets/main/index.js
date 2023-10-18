@@ -245,43 +245,1349 @@ System.register("chunks:///_virtual/Data.ts", ['cc'], function (exports) {
           property = _decorator.property;
       var Data = exports('Data', (_dec = ccclass('Data'), _dec(_class = (_class2 = /*#__PURE__*/function () {
         function Data() {
-          this.itemList = [{
-            name: "楚地",
+          this.tList = [{
             ori: "湖北",
-            color: "黄",
+            name: "黄鹤楼(1916中支)",
+            sizeName: "65*93*14",
             size: {
-              x: 1,
-              y: 0.3,
-              z: 0.1
-            }
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "1200",
+            pic: "ID_514652FAA5F0461E93BD04A66ADB8950",
+            colors: ["黄"]
           }, {
-            name: "黄鹤楼",
-            ori: "武汉",
-            color: "红",
+            ori: "湖北",
+            name: "黄鹤楼(硬1916)",
+            sizeName: "55*86*22",
             size: {
-              x: 0.8,
-              y: 0.25,
-              z: 0.12
-            }
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_079450F6AE6F40C28EFC71E2A1BEC189",
+            colors: ["黄"]
           }, {
-            name: "南山",
-            ori: "深圳",
-            color: "蓝",
+            ori: "湖北",
+            name: "黄鹤楼(软1916)",
+            sizeName: "53*83*20",
             size: {
-              x: 1.2,
-              y: 0.25,
-              z: 0.08
-            }
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_907921F41B5848A5BBBC55DF3C9D4BFF",
+            colors: ["黄"]
           }, {
-            name: "江西",
+            ori: "湖北",
+            name: "黄鹤楼(硬15细支)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_5C886642A35D42EA84E28C715A279A51",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬1916如意)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_DF9C1620819F45F7AD590B7EA7695AE5",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬1916红爆)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_60CF8340C8ED4480935121B73DA3DFD2",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬平安)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_4A6A09E1EC734506AC15E7F92893953F",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬15)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_9BCD623B8EB14E9C81246DC21E6CE273",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬感恩)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "900",
+            pic: "ID_D3D3832DA6044571BE85CE7D2BAB1434",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬漫天游)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "850",
+            pic: "ID_A3DD895E84414A72B6C227E16FA1B613",
+            colors: ["黄", "黑", "金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(软珍品)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "650",
+            pic: "ID_A026C2EDC1904D1996E57F91561A62AF",
+            colors: ["黑"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(视界)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "50",
+            price: "560",
+            pic: "ID_02FED7B6F46E408CA20C623588B42DFD",
+            colors: ["蓝"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(珍品细支)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_DC3C8DD43E1B4E8D8C48F4AC2A6B0B8B",
+            colors: ["黑"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(金典中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_262DE450B12848F3B09EF437A5153159",
+            colors: ["金", "黑"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬珍品)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "900",
+            price: "450",
+            pic: "ID_41836B83725847559DC11239BCB211E6",
+            colors: ["黑"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬峡谷情)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "450",
+            pic: "ID_A685D2AA0885418D9C34D9FD53496649",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(视窗)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "800",
+            price: "400",
+            pic: "ID_DFD4CBADB5A343BD9C369CF1CDAD4A75",
+            colors: ["蓝"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬峡谷柔情)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "400",
+            pic: "ID_D22D37F33B2D4E23A0825F566EDB8DD9",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬峡谷情细支)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "350",
+            pic: "ID_CF3D27E6270D43A9921C36A1CB1975A2",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬奇景)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "300",
+            pic: "ID_A72D8E5551D54DD78B49165DF9805AD8",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(软红)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "260",
+            pic: "ID_957183978739462FBA1946E549415E86",
+            colors: ["金", "红"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(感恩中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "260",
+            pic: "ID_3102CFAA57724B3086AF8E3833F6DA9B",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬天下胜景)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "260",
+            pic: "ID_B84192D605914EA2AD4C3105235E7DBF",
+            colors: ["蓝", "绿", "白"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬红)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "220",
+            pic: "ID_BEE2C76804B0446F87973B6346613571",
+            colors: ["金", "红"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬祝福)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "200",
+            pic: "ID_BF2D5A76A462454786BBA855D5109D40",
+            colors: ["红"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬嘉禧缘)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "200",
+            pic: "ID_01867A8ACBF84DA0B8120CC8EFDEB337",
+            colors: ["黄"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬蓝)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "220",
+            pic: "ID_20D14A97BE754CA0B886CC7D09D25E5C",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(软蓝)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "190",
+            pic: "ID_631A8B13F4624721B8094B2C3EB3B9E1",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬8度)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "200",
+            pic: "ID_5A5CB1D7467E4176A4ED5770AA290657",
+            colors: ["蓝", "黑"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(天下名楼)",
+            sizeName: "55*86*11",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 11
+            },
+            num: "1000",
+            price: "160",
+            pic: "ID_6362024254DD44BCBDDB0162DA7FE348",
+            colors: ["黄", "金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(软雪之景)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_4F0D67E897C74A1B92D6CFA48E0A7BDC",
+            colors: ["红", "金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬雪之景)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_93E14C11558C4978B922987909A6A057",
+            colors: ["白，金"]
+          }, {
+            ori: "湖北",
+            name: "黄鹤楼(硬银紫)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_5A2B9A12B4C647959F62EE16B2BC88BD",
+            colors: ["紫", "金"]
+          }, {
+            ori: "湖北",
+            name: "红金龙(硬蓝爱你)",
+            sizeName: "55*92*11",
+            size: {
+              "x": 55,
+              "y": 92,
+              "z": 11
+            },
+            num: "1000",
+            price: "110",
+            pic: "ID_08FAC8A946C74C33B3003058F6E7A951",
+            colors: ["白", "蓝"]
+          }, {
+            ori: "湖北",
+            name: "红金龙(软精品)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "110",
+            pic: "ID_28232F8BE3CF4C8C873B6F1A35424F4F",
+            colors: ["红"]
+          }, {
+            ori: "湖北",
+            name: "红金龙(硬神州腾龙)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "65",
+            pic: "ID_8AE59D0416A542A4BDA20116C4365E12",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "红金龙(硬新版)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "50",
+            pic: "ID_433B93690FE84ABEB8A548655AFFA056",
+            colors: ["白"]
+          }, {
+            ori: "湖北",
+            name: "红金龙(软蓝九州腾龙)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "45",
+            pic: "ID_40342CB0A9254DC7A291539A3F7694FB",
+            colors: ["蓝"]
+          }, {
+            ori: "云南",
+            name: "云烟(细支大重九)",
+            sizeName: "55*103*11",
+            size: {
+              "x": 55,
+              "y": 103,
+              "z": 11
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_892ED7C95A1240439B59DBB3BCDCF73E",
+            colors: ["黄", "橙"]
+          }, {
+            ori: "云南",
+            name: "云烟(软大重九)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_3C6B83577F7846EEBAF9F8CC7FC07FAA",
+            colors: ["黄", "橙"]
+          }, {
+            ori: "云南",
+            name: "云烟(黑金刚印象)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "600",
+            pic: "ID_A175EF9878644227BB062FEBFC2E3AAE",
+            colors: ["黑"]
+          }, {
+            ori: "云南",
+            name: "云烟(软珍品)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "230",
+            pic: "ID_12DF0C1A7F154CC9B3860342D9DC2906",
+            colors: ["红"]
+          }, {
+            ori: "云南",
+            name: "云烟(细支云龙)",
+            sizeName: "55*103*11",
+            size: {
+              "x": 55,
+              "y": 103,
+              "z": 11
+            },
+            num: "1000",
+            price: "150",
+            pic: "ID_A212C71126D640D68C4B739AA8D45C43",
+            colors: ["白"]
+          }, {
+            ori: "云南",
+            name: "云烟(软紫)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "110",
+            pic: "ID_E96F2071D6154EBA99010CCBAC2A2BDD",
+            colors: ["红"]
+          }, {
+            ori: "云南",
+            name: "玉溪(硬和谐)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "420",
+            pic: "ID_B23EEBCA16994139ADE187B9537B744F",
+            colors: ["金"]
+          }, {
+            ori: "云南",
+            name: "玉溪(鑫中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "260",
+            pic: "ID_39E60835824E414E99775B55AE9EBBDF",
+            colors: ["红", "白"]
+          }, {
+            ori: "云南",
+            name: "玉溪(软)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "230",
+            pic: "ID_0C3A1DF2501F4D2BA6774349F7576969",
+            colors: ["红", "白"]
+          }, {
+            ori: "云南",
+            name: "红塔山(硬经典100)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "100",
+            pic: "ID_AA4E99E219E8491BBC68E906B74DDCE6",
+            colors: ["金"]
+          }, {
+            ori: "云南",
+            name: "红塔山(软经典)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "85",
+            pic: "ID_BFA51A18206A49EE9BBEAAC8F6791A52",
+            colors: ["白"]
+          }, {
+            ori: "浙江",
+            name: "利群(休闲细支)",
+            sizeName: "55*86*11",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 11
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_81A5F9E135C24C9297CE8A782785F150",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "浙江",
+            name: "利群(红利)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_FAB4B7D90B454DEE8437434B69D6388C",
+            colors: ["红", "金"]
+          }, {
+            ori: "浙江",
+            name: "利群(阳光尊中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "450",
+            pic: "ID_FEE25EB0474F453BB85DE57FA7926C1B",
+            colors: ["红"]
+          }, {
+            ori: "浙江",
+            name: "利群(软长嘴)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "360",
+            pic: "ID_D1D931E182854698A89862542D7F31F7",
+            colors: ["红", "黑", "金"]
+          }, {
+            ori: "浙江",
+            name: "利群(西子阳光)",
+            sizeName: "55*86*11",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 11
+            },
+            num: "1000",
+            price: "310",
+            pic: "ID_1A172110B88843A79EA69535CB264D7B",
+            colors: ["白", "黄"]
+          }, {
+            ori: "浙江",
+            name: "利群(长嘴)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "220",
+            pic: "ID_2CCABE0E6CAC40E7843FB80B15ACC0CD",
+            colors: ["红", "金", "黄"]
+          }, {
+            ori: "浙江",
+            name: "利群(软蓝)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "180",
+            pic: "ID_D19DFD4C384E4ECC937107954AF7A1AF",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "浙江",
+            name: "利群(新版)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_E0631B14962441D3BD9692CFFFF8F318",
+            colors: ["红", "白"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(天叶细支)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_E2B24C78CBC64CFBA0142F8E4C252EA8",
+            colors: ["白", "黄"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(天叶)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_59A00B6C6C2A440CB6AF8E45E9549DAB",
+            colors: ["白", "黄"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(天香细支)",
+            sizeName: "55*96*11",
+            size: {
+              "x": 55,
+              "y": 96,
+              "z": 11
+            },
+            num: "1000",
+            price: "600",
+            pic: "ID_19389F55E8BF40F3A45ACCC13493C367",
+            colors: ["白", "黄"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(浓香中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "350",
+            pic: "ID_1A0B55E5BEB442128125EB2DDD8A7605",
+            colors: ["黑", "金"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(商鼎)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "220",
+            pic: "ID_001E24A093AE48F0AA4306097FFD8408",
+            colors: ["白"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(乐途)",
+            sizeName: "53*76*20",
+            size: {
+              "x": 53,
+              "y": 76,
+              "z": 20
+            },
+            num: "1000",
+            price: "150",
+            pic: "ID_E5F31A91A999435D8912F265CB959E32",
+            colors: ["白", "红", "黄"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(小目标)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_D851CD7A398D4F26A4C52D443946DEEE",
+            colors: ["蓝", "黄", "红"]
+          }, {
+            ori: "河南",
+            name: "黄金叶(喜满堂)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "100",
+            pic: "ID_AB90C923902D47E290EDF8D7D5EB7FA4",
+            colors: ["红", "白"]
+          }, {
+            ori: "江西",
+            name: "金圣(圣地中国红中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "550",
+            pic: "ID_012FDFFDB8594FC884AAC68D8DACA552",
+            colors: ["红", "黄"]
+          }, {
+            ori: "江西",
+            name: "金圣(吉品)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "250",
+            pic: "ID_0EF20344196A42298A7D1BCC48514324",
+            colors: ["红", "黄"]
+          }, {
+            ori: "江西",
+            name: "金圣(青瓷)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "180",
+            pic: "ID_405401F9BE6349DD908EF43DEFD4EA0B",
+            colors: ["蓝"]
+          }, {
+            ori: "江西",
+            name: "金圣(滕王阁·紫光)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "150",
+            pic: "ID_4ED8E6F8E15E45DB9986B7640CFACCC1",
+            colors: ["紫", "金"]
+          }, {
+            ori: "江西",
+            name: "金圣(硬滕王阁)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "100",
+            pic: "ID_2543714E1A814312AA4089BC25B917FE",
+            colors: ["黄", "蓝"]
+          }, {
+            ori: "江西",
+            name: "金圣(硬红·十二生肖)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "70",
+            pic: "ID_70CB2B56A8C543A180C6E7FE4A526F3A",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(金中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "800",
+            pic: "ID_14B20A6B60EC4714A5BAB645A89FB53C",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(金细支)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "800",
+            pic: "ID_DDC5268B3C7D4C869406AA43586BFBB6",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(软)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "700",
+            pic: "ID_AB85A997CEFD459D963E88D1764B0608",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(双中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_B9AF14B6CD9447909D51702535E4A66B",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(细支)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_7A0528E1B53E422597E15DF31A6FE554",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "中华(硬)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "450",
+            pic: "ID_9FD9E2F6F61640D8B16F06E1D9418B45",
+            colors: ["红", "金"]
+          }, {
+            ori: "上海",
+            name: "牡丹(软)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "130",
+            pic: "ID_3FC465ECE8E34669A2E1E8839D88ECE1",
+            colors: ["红", "白"]
+          }, {
+            ori: "安徽",
+            name: "黄山(徽商新概念细支)",
+            sizeName: "55*96*11",
+            size: {
+              "x": 55,
+              "y": 96,
+              "z": 11
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_CC2663D3B953462EB52F68C2393070D6",
+            colors: ["黄", "金"]
+          }, {
+            ori: "安徽",
+            name: "黄山(红方印金中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "400",
+            pic: "ID_7F1D5C4ADCB04C87AEAA5AB6F801D84A",
+            colors: ["红", "白", "金"]
+          }, {
+            ori: "安徽",
+            name: "黄山(金皖烟)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "280",
+            pic: "ID_BEBC82C7CAF44DFE9AE7C8E6E0913058",
+            colors: ["黄", "金"]
+          }, {
+            ori: "安徽",
+            name: "黄山(新制皖烟)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_6F77406624C640EEBCFAA8FF12AF54C2",
+            colors: ["金"]
+          }, {
+            ori: "安徽",
+            name: "黄山(硬记忆)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "100",
+            pic: "ID_70BDAA755D054D7893285473E38B3F8C",
+            colors: ["黄", "白"]
+          }, {
+            ori: "安徽",
+            name: "黄山(新一品)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "70",
+            pic: "ID_F69909BBDBC04C538CA0BA9CFB6B27EF",
+            colors: ["红", "黑"]
+          }, {
             ori: "湖南",
-            color: "绿",
+            name: "白沙(和天下)",
+            sizeName: "55*86*22",
             size: {
-              x: 0.5,
-              y: 0.3,
-              z: 0.1
-            }
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_9C16790BA1D94987BE572C67EE401B13",
+            colors: ["紫", "金"]
+          }, {
+            ori: "湖南",
+            name: "白沙(软和天下)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "1000",
+            pic: "ID_AF04DE7E714B4FD78B8F80C977C8FA0C",
+            colors: ["紫", "金"]
+          }, {
+            ori: "湖南",
+            name: "白沙(硬新精品二代)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "100",
+            pic: "ID_6ED8A1197B6D4A7A85678224C1FDF4AC",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "湖南",
+            name: "芙蓉王(硬蓝新版)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "350",
+            pic: "ID_D157601363914CBAA50EC25222A34F08",
+            colors: ["蓝", "金"]
+          }, {
+            ori: "湖南",
+            name: "芙蓉王(硬中支)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "300",
+            pic: "ID_B53D7D930BA1421083119BC57A4B5CEE",
+            colors: ["白", "金"]
+          }, {
+            ori: "湖南",
+            name: "芙蓉王(硬)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "250",
+            pic: "ID_DF1E51DF441E41D88B50399950F50FC5",
+            colors: ["黄", "金"]
+          }, {
+            ori: "河北",
+            name: "钻石(细支荷花)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "420",
+            pic: "ID_D8DA4AE3A19A45B79AE8CF044FD50C24",
+            colors: ["绿", "黄", "红"]
+          }, {
+            ori: "河北",
+            name: "钻石(软荷花)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "500",
+            pic: "ID_B0757210498440A8BCA7462381A714CF",
+            colors: ["绿", "黄", "红"]
+          }, {
+            ori: "河北",
+            name: "钻石(荷花)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "400",
+            pic: "ID_9BEE6CCC9FD4468481B03C5E2D7BC6E6",
+            colors: ["绿", "黄", "红"]
+          }, {
+            ori: "河北",
+            name: "钻石(硬蓝)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "55",
+            pic: "ID_EFF6F0BA6B97486A8D579C9D50CBB93F",
+            colors: ["蓝", "白"]
+          }, {
+            ori: "福建",
+            name: "七匹狼(软灰)",
+            sizeName: "53*83*20",
+            size: {
+              "x": 53,
+              "y": 83,
+              "z": 20
+            },
+            num: "1000",
+            price: "210",
+            pic: "ID_BB582C338009438FAF86E8A9836724B8",
+            colors: ["灰", "红", "白", "黑"]
+          }, {
+            ori: "福建",
+            name: "七匹狼(锋芒)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "180",
+            pic: "ID_798F341997714C6A95445309D5E74117",
+            colors: ["灰", "红", "白", "黑"]
+          }, {
+            ori: "福建",
+            name: "七匹狼(纯境)",
+            sizeName: "65*93*14",
+            size: {
+              "x": 65,
+              "y": 93,
+              "z": 14
+            },
+            num: "1000",
+            price: "160",
+            pic: "ID_E32A5ACBF410466C957C3AE548674ED3",
+            colors: ["青", "金", "蓝"]
+          }, {
+            ori: "福建",
+            name: "七匹狼(蓝钻)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "130",
+            pic: "ID_7F5D742A90F642E7B696259FEDDEAF58",
+            colors: ["蓝", "白"]
+          }, {
+            ori: "山东",
+            name: "泰山(儒风细支)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "300",
+            pic: "ID_9FE8471B87DB456DAB9E879AC2E9988B",
+            colors: ["金", "白"]
+          }, {
+            ori: "山东",
+            name: "泰山(望岳)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "190",
+            pic: "ID_89675B039BF54AA7BCF5F6C3E65388A7",
+            colors: ["金", "白"]
+          }, {
+            ori: "山东",
+            name: "泰山(心悦)",
+            sizeName: "55*100*11",
+            size: {
+              "x": 55,
+              "y": 100,
+              "z": 11
+            },
+            num: "1000",
+            price: "160",
+            pic: "ID_5C5D3A8CE94C44AF85FBBA38A1DC9E46",
+            colors: ["蓝", "青", "白"]
+          }, {
+            ori: "山东",
+            name: "泰山(青秀)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "140",
+            pic: "ID_4B411445A7B3419C80FE20F2C85EDCEE",
+            colors: ["白", "绿", "红"]
+          }, {
+            ori: "山东",
+            name: "泰山(平安)",
+            sizeName: "55*86*22",
+            size: {
+              "x": 55,
+              "y": 86,
+              "z": 22
+            },
+            num: "1000",
+            price: "110",
+            pic: "ID_CD2DAE969225499AA15CDFE0218B34AC",
+            colors: ["红", "金"]
           }];
+          this.oriMap = null;
+          this.sizeMap = null;
+          this.colorsMap = null;
         }
 
         Data.getInstance = function getInstance() {
@@ -292,9 +1598,70 @@ System.register("chunks:///_virtual/Data.ts", ['cc'], function (exports) {
           return Data.instance;
         };
 
+        var _proto = Data.prototype;
+
+        _proto.initListCategory = function initListCategory(fun) {
+          this.oriMap = new Map();
+          this.sizeMap = new Map();
+          this.colorsMap = new Map();
+
+          for (var i = 0; i < this.tList.length; i++) {
+            var item = this.tList[i];
+
+            if (!this.oriMap.has(item.ori)) {
+              var arr = [];
+              arr.push(i);
+              this.oriMap.set(item.ori, arr);
+            } else {
+              var _arr = this.oriMap.get(item.ori);
+
+              _arr.push(i);
+
+              this.oriMap.set(item.ori, _arr);
+            }
+
+            if (!this.sizeMap.has(item.sizeName)) {
+              var _arr2 = [];
+
+              _arr2.push(i);
+
+              this.sizeMap.set(item.sizeName, _arr2);
+            } else {
+              var _arr3 = this.sizeMap.get(item.sizeName);
+
+              _arr3.push(i);
+
+              this.sizeMap.set(item.sizeName, _arr3);
+            }
+
+            for (var j = 0; j < item.colors.length; j++) {
+              var color = item.colors[j];
+
+              if (!this.colorsMap.has(color)) {
+                var _arr4 = [];
+
+                _arr4.push(i);
+
+                this.colorsMap.set(color, _arr4);
+              } else {
+                var _arr5 = this.colorsMap.get(color);
+
+                _arr5.push(i);
+
+                this.colorsMap.set(color, _arr5);
+              }
+            }
+
+            if (i == this.tList.length - 1) {
+              console.warn(this.oriMap, this.sizeMap, this.colorsMap);
+              fun && fun();
+            }
+          }
+        };
+
         return Data;
       }(), _class2.instance = void 0, _class2)) || _class));
-      var data = new Data(); // default data
+      var data = exports('data', Data.getInstance());
 
       cclegacy._RF.pop();
     }
@@ -752,10 +2119,10 @@ System.register("chunks:///_virtual/dweb_player.ts", ['./rollupPluginModLoBabelH
   };
 });
 
-System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './ItemList.ts'], function (exports) {
+System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './ItemList.ts', './Xllb.ts'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, Node, Camera, Prefab, _decorator, v3, Input, Quat, quat, instantiate, MeshRenderer, tween, UITransform, Size, Component, ItemList;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, Node, Camera, Prefab, _decorator, v3, Input, Quat, quat, instantiate, MeshRenderer, tween, Component, ItemList, Xllb;
 
   return {
     setters: [function (module) {
@@ -776,21 +2143,21 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
       instantiate = module.instantiate;
       MeshRenderer = module.MeshRenderer;
       tween = module.tween;
-      UITransform = module.UITransform;
-      Size = module.Size;
       Component = module.Component;
     }, function (module) {
       ItemList = module.ItemList;
+    }, function (module) {
+      Xllb = module.Xllb;
     }],
     execute: function () {
-      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9;
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10;
 
       cclegacy._RF.push({}, "6c420qPq0lOS6+dueeDZYWF", "Game", undefined);
 
       var _cc$_decorator = _decorator,
           ccclass = _cc$_decorator.ccclass,
           property = _cc$_decorator.property;
-      var Game = exports('Game', (_dec = ccclass('Game'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Camera), _dec5 = property(Prefab), _dec6 = property(Prefab), _dec7 = property(Node), _dec8 = property(ItemList), _dec9 = property(Prefab), _dec10 = property(Node), _dec(_class = (_class2 = /*#__PURE__*/function (_cc$Component) {
+      var Game = exports('Game', (_dec = ccclass('Game'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Camera), _dec5 = property(Prefab), _dec6 = property(Prefab), _dec7 = property(Node), _dec8 = property(ItemList), _dec9 = property(Prefab), _dec10 = property(Node), _dec11 = property(Xllb), _dec(_class = (_class2 = /*#__PURE__*/function (_cc$Component) {
         _inheritsLoose(Game, _cc$Component);
 
         function Game() {
@@ -820,6 +2187,9 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
 
           _initializerDefineProperty(_this, "GameNode", _descriptor9, _assertThisInitialized(_this));
 
+          _initializerDefineProperty(_this, "lb", _descriptor10, _assertThisInitialized(_this));
+
+          _this.curToggle = 1;
           _this.wallNodes = [];
           _this.hasGetTouch = false;
           _this.canPlay = false;
@@ -935,7 +2305,8 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
         /**touchMove绑定事件 */
         ;
 
-        _proto._onTouchMove = function _onTouchMove(event) {// event.getUILocation(this._tempTouchVec2);
+        _proto._onTouchMove = function _onTouchMove(event) {
+          console.warn(this.CCCamera.getComponent(Camera).worldToScreen(v3(event.getLocation().x, event.getLocation().y, 0))); // event.getUILocation(this._tempTouchVec2);
           // if (this._judgeInArea(this._tempTouchVec2, this.gameCtrlPos)) {
           //     if (!this.canPlay || this.myList.curItemId < 0) return;
           //     this._setFoodTouchMove(event);
@@ -1257,8 +2628,7 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
             var w = p3.x - p1.x;
             var h = p2.y - p1.y + (p3.y - p2.y) / 2;
             var centerX = p1.x + p3.x / 2; // this.node.setPosition();
-
-            this.node.getComponent(UITransform).setContentSize(new Size());
+            // this.node.getComponent(cc.UITransform).setContentSize(new cc.Size());
           }
 
           tween(this.CCCamera.node).to(2, {
@@ -1267,6 +2637,19 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
           }).call(function () {
             _this3.canPlay = true;
           }).start();
+        };
+
+        _proto.showXL = function showXL() {
+          var isShow = !this.lb.node.active;
+          this.lb.node.active = isShow;
+
+          if (isShow) {
+            this.lb.show(this.curToggle);
+          }
+        };
+
+        _proto.changeToggle = function changeToggle(e, customEventData) {
+          this.curToggle = Number(customEventData);
         };
 
         return Game;
@@ -1333,6 +2716,13 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
         initializer: function initializer() {
           return null;
         }
+      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "lb", [_dec11], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
       })), _class2)) || _class));
 
       cclegacy._RF.pop();
@@ -1340,10 +2730,10 @@ System.register("chunks:///_virtual/Game.ts", ['./rollupPluginModLoBabelHelpers.
   };
 });
 
-System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './sampleView.ts'], function (exports) {
+System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './sampleView.ts', './Data.ts'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, director, Component, sampleView;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, director, Component, sampleView, data;
 
   return {
     setters: [function (module) {
@@ -1359,6 +2749,8 @@ System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.
       Component = module.Component;
     }, function (module) {
       sampleView = module.sampleView;
+    }, function (module) {
+      data = module.data;
     }],
     execute: function () {
       var _dec, _dec2, _class, _class2, _descriptor;
@@ -1395,7 +2787,9 @@ System.register("chunks:///_virtual/Home.ts", ['./rollupPluginModLoBabelHelpers.
         _proto.update = function update(deltaTime) {};
 
         _proto.clickMain = function clickMain() {
-          director.loadScene("Main");
+          data.initListCategory(function () {
+            director.loadScene("Main");
+          });
         };
 
         _proto.clickExample = function clickExample() {
@@ -1563,10 +2957,10 @@ System.register("chunks:///_virtual/Item.ts", ['./rollupPluginModLoBabelHelpers.
   };
 });
 
-System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './ItemView.ts'], function (exports) {
+System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './ItemView.ts', './Data.ts'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Prefab, Material, UITransform, instantiate, isValid, Component, ItemView;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Prefab, Material, instantiate, isValid, Component, ItemView, data;
 
   return {
     setters: [function (module) {
@@ -1580,12 +2974,13 @@ System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelp
       Node = module.Node;
       Prefab = module.Prefab;
       Material = module.Material;
-      UITransform = module.UITransform;
       instantiate = module.instantiate;
       isValid = module.isValid;
       Component = module.Component;
     }, function (module) {
       ItemView = module.ItemView;
+    }, function (module) {
+      data = module.data;
     }],
     execute: function () {
       var _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3;
@@ -1594,43 +2989,6 @@ System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelp
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var itemListArr = [{
-        name: "楚地",
-        ori: "湖北",
-        color: "黄",
-        size: {
-          x: 1,
-          y: 0.3,
-          z: 0.1
-        }
-      }, {
-        name: "黄鹤楼",
-        ori: "武汉",
-        color: "红",
-        size: {
-          x: 0.8,
-          y: 0.25,
-          z: 0.12
-        }
-      }, {
-        name: "南山",
-        ori: "深圳",
-        color: "蓝",
-        size: {
-          x: 1.2,
-          y: 0.25,
-          z: 0.08
-        }
-      }, {
-        name: "江西",
-        ori: "湖南",
-        color: "绿",
-        size: {
-          x: 0.5,
-          y: 0.3,
-          z: 0.1
-        }
-      }];
       var ItemList = exports('ItemList', (_dec = ccclass('ItemList'), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property([Material]), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(ItemList, _Component);
 
@@ -1645,41 +3003,53 @@ System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelp
 
           _initializerDefineProperty(_this, "content", _descriptor, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_this, "itemView", _descriptor2, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "itemViewPerfab", _descriptor2, _assertThisInitialized(_this));
 
           _initializerDefineProperty(_this, "materials", _descriptor3, _assertThisInitialized(_this));
 
           _this.curItemId = -1;
           _this.selectNode = null;
+          _this.initIndex = 0;
+          _this.hadStart = false;
           return _this;
         }
 
         var _proto = ItemList.prototype;
 
         _proto.start = function start() {
-          this.content.removeAllChildren();
+          var _this2 = this;
 
-          for (var i = 0; i < itemListArr.length; i++) {
-            console.warn(i, this.content.getComponent(UITransform).width);
-            var node = instantiate(this.itemView);
-            var comp = node.getComponent(ItemView);
-            comp.initView(i, itemListArr[i].name, null);
-            comp.myList = this;
-            node.setPosition(0, 0, 0);
-            this.content.addChild(node);
-          }
+          this.content.removeAllChildren();
+          this.scheduleOnce(function () {
+            _this2.hadStart = true;
+          }, 1);
         };
 
-        _proto.updateList = function updateList(itemList) {
-          this.content.removeAllChildren();
+        _proto.update = function update(dt) {
+          // if(!this.hadStart)return;
+          if (this.initIndex >= data.tList.length) return;
+          var item = data.tList[this.initIndex];
+          var node = instantiate(this.itemViewPerfab);
+          var comp = node.getComponent(ItemView);
+          comp.initView(this.initIndex, item);
+          comp.myList = this;
+          node.setPosition(0, 0, 0);
+          this.content.addChild(node);
+          this.initIndex++;
+        };
 
-          for (var i = 0; i < itemListArr.length; i++) {
-            var node = instantiate(this.itemView);
-            var comp = node.getComponent(ItemView);
-            comp.initView(i, itemListArr[i].name, null);
-            comp.myList = this;
-            node.setPosition(0, 0, 0);
-            this.content.addChild(node);
+        _proto.updateList = function updateList(type, value) {
+          for (var i = 0; i < this.content.children.length; i++) {
+            console.warn(this.content.children.length);
+            console.warn(data.tList[i].ori, value);
+
+            if (type == 1) {
+              this.content.children[i].active = data.tList[i].ori == value;
+            } else if (type == 2) {
+              this.content.children[i].active = data.tList[i].colors.includes(value);
+            } else if (type == 2) {
+              this.content.children[i].active = data.tList[i].size == value;
+            }
           }
         };
 
@@ -1698,7 +3068,7 @@ System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelp
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "itemView", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "itemViewPerfab", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -1722,7 +3092,7 @@ System.register("chunks:///_virtual/ItemList.ts", ['./rollupPluginModLoBabelHelp
 System.register("chunks:///_virtual/ItemView.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
   'use strict';
 
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Sprite, Label, Component;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Sprite, LabelComponent, SpriteFrame, Component;
 
   return {
     setters: [function (module) {
@@ -1734,7 +3104,8 @@ System.register("chunks:///_virtual/ItemView.ts", ['./rollupPluginModLoBabelHelp
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
       Sprite = module.Sprite;
-      Label = module.Label;
+      LabelComponent = module.LabelComponent;
+      SpriteFrame = module.SpriteFrame;
       Component = module.Component;
     }],
     execute: function () {
@@ -1744,7 +3115,7 @@ System.register("chunks:///_virtual/ItemView.ts", ['./rollupPluginModLoBabelHelp
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var ItemView = exports('ItemView', (_dec = ccclass('ItemView'), _dec2 = property(Sprite), _dec3 = property(Label), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var ItemView = exports('ItemView', (_dec = ccclass('ItemView'), _dec2 = property(Sprite), _dec3 = property(LabelComponent), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(ItemView, _Component);
 
         function ItemView() {
@@ -1767,12 +3138,17 @@ System.register("chunks:///_virtual/ItemView.ts", ['./rollupPluginModLoBabelHelp
 
         var _proto = ItemView.prototype;
 
-        _proto.initView = function initView(id, name, pic) {
-          console.warn(name, this.nameLab);
-          this.nameLab.string = name;
-          this.itemId = id;
-          if (!pic) return;
-          this.picNode.spriteFrame = pic;
+        _proto.initView = function initView(id, item) {
+          var _this2 = this;
+
+          this.scheduleOnce(function () {
+            _this2.nameLab.string = item.name;
+
+            _this2.nameLab.updateRenderData(true);
+
+            _this2.itemId = id;
+            if (item.pic instanceof SpriteFrame) _this2.picNode.spriteFrame = item.pic;
+          });
         };
 
         _proto.select = function select() {
@@ -1842,11 +3218,11 @@ System.register("chunks:///_virtual/kvItem.ts", ['./rollupPluginModLoBabelHelper
   };
 });
 
-System.register("chunks:///_virtual/main", ['./Data.ts', './Basket.ts', './Game.ts', './Item.ts', './ItemList.ts', './ItemView.ts', './Main.ts', './MoveGame.ts', './Home.ts', './kvItem.ts', './sampleItem.ts', './sampleView.ts', './dweb_player.ts'], function () {
+System.register("chunks:///_virtual/main", ['./Data.ts', './Basket.ts', './Game.ts', './Item.ts', './ItemList.ts', './ItemView.ts', './Main.ts', './MoveGame.ts', './XLItem.ts', './Xllb.ts', './Home.ts', './kvItem.ts', './sampleItem.ts', './sampleView.ts', './dweb_player.ts'], function () {
   'use strict';
 
   return {
-    setters: [null, null, null, null, null, null, null, null, null, null, null, null, null],
+    setters: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
     execute: function () {}
   };
 });
@@ -2165,6 +3541,256 @@ System.register("chunks:///_virtual/sampleView.ts", ['./rollupPluginModLoBabelHe
           return null;
         }
       }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "kvItem", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      })), _class2)) || _class));
+
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/XLItem.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+  'use strict';
+
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, LabelComponent, Component;
+
+  return {
+    setters: [function (module) {
+      _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
+      _inheritsLoose = module.inheritsLoose;
+      _initializerDefineProperty = module.initializerDefineProperty;
+      _assertThisInitialized = module.assertThisInitialized;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      _decorator = module._decorator;
+      LabelComponent = module.LabelComponent;
+      Component = module.Component;
+    }],
+    execute: function () {
+      var _dec, _dec2, _class, _class2, _descriptor;
+
+      cclegacy._RF.push({}, "c7d69H5ZM1HhJYHiAXAKIip", "XLItem", undefined);
+
+      var ccclass = _decorator.ccclass,
+          property = _decorator.property;
+      var XLItem = exports('XLItem', (_dec = ccclass('XLItem'), _dec2 = property(LabelComponent), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+        _inheritsLoose(XLItem, _Component);
+
+        function XLItem() {
+          var _this;
+
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+          _this.type = null;
+          _this.value = null;
+          _this.lb = null;
+
+          _initializerDefineProperty(_this, "nameLab", _descriptor, _assertThisInitialized(_this));
+
+          return _this;
+        }
+
+        var _proto = XLItem.prototype;
+
+        _proto.start = function start() {};
+
+        _proto.update = function update(deltaTime) {};
+
+        _proto.init = function init(type, value, lb) {
+          var _this2 = this;
+
+          this.scheduleOnce(function () {
+            _this2.nameLab.string = value;
+
+            _this2.nameLab.updateRenderData(true);
+          });
+          this.type = type;
+          this.value = value;
+          this.lb = lb;
+        };
+
+        _proto.click = function click() {
+          this.lb.updateList(this.type, this.value);
+        };
+
+        return XLItem;
+      }(Component), _descriptor = _applyDecoratedDescriptor(_class2.prototype, "nameLab", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _class2)) || _class));
+
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/Xllb.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './Data.ts', './XLItem.ts', './ItemList.ts'], function (exports) {
+  'use strict';
+
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, _createForOfIteratorHelperLoose, cclegacy, _decorator, Prefab, Node, LabelComponent, instantiate, Component, data, XLItem, ItemList;
+
+  return {
+    setters: [function (module) {
+      _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
+      _inheritsLoose = module.inheritsLoose;
+      _initializerDefineProperty = module.initializerDefineProperty;
+      _assertThisInitialized = module.assertThisInitialized;
+      _createForOfIteratorHelperLoose = module.createForOfIteratorHelperLoose;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      _decorator = module._decorator;
+      Prefab = module.Prefab;
+      Node = module.Node;
+      LabelComponent = module.LabelComponent;
+      instantiate = module.instantiate;
+      Component = module.Component;
+    }, function (module) {
+      data = module.data;
+    }, function (module) {
+      XLItem = module.XLItem;
+    }, function (module) {
+      ItemList = module.ItemList;
+    }],
+    execute: function () {
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
+
+      cclegacy._RF.push({}, "1cf78aFrS1CPYglZi2aWJN7", "Xllb", undefined);
+
+      var ccclass = _decorator.ccclass,
+          property = _decorator.property;
+      var Xllb = exports('Xllb', (_dec = ccclass('Xllb'), _dec2 = property(Prefab), _dec3 = property(Node), _dec4 = property(ItemList), _dec5 = property(Node), _dec6 = property(LabelComponent), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+        _inheritsLoose(Xllb, _Component);
+
+        function Xllb() {
+          var _this;
+
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+
+          _initializerDefineProperty(_this, "item", _descriptor, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "content", _descriptor2, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "list", _descriptor3, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "view", _descriptor4, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "nameLab", _descriptor5, _assertThisInitialized(_this));
+
+          return _this;
+        }
+
+        var _proto = Xllb.prototype;
+
+        _proto.start = function start() {
+          this.initView();
+        };
+
+        _proto.update = function update(deltaTime) {};
+
+        _proto.initView = function initView() {
+          this.node.active = false;
+
+          for (var _iterator = _createForOfIteratorHelperLoose(data.oriMap.keys()), _step; !(_step = _iterator()).done;) {
+            var key = _step.value;
+            var node = instantiate(this.item);
+            var comp = node.getComponent(XLItem);
+            comp.init(1, key, this);
+            node.setPosition(0, 0, 0);
+            this.content.addChild(node);
+            node.active = false;
+          }
+
+          for (var _iterator2 = _createForOfIteratorHelperLoose(data.sizeMap.keys()), _step2; !(_step2 = _iterator2()).done;) {
+            var _key2 = _step2.value;
+
+            var _node = instantiate(this.item);
+
+            var _comp = _node.getComponent(XLItem);
+
+            _comp.init(3, _key2, this);
+
+            _node.setPosition(0, 0, 0);
+
+            this.content.addChild(_node);
+            _node.active = false;
+          }
+
+          for (var _iterator3 = _createForOfIteratorHelperLoose(data.colorsMap.keys()), _step3; !(_step3 = _iterator3()).done;) {
+            var _key3 = _step3.value;
+
+            var _node2 = instantiate(this.item);
+
+            var _comp2 = _node2.getComponent(XLItem);
+
+            _comp2.init(2, _key3, this);
+
+            _node2.setPosition(0, 0, 0);
+
+            this.content.addChild(_node2);
+            _node2.active = false;
+          }
+        };
+
+        _proto.show = function show(type) {
+          for (var i = 0; i < this.content.children.length; i++) {
+            var comp = this.content.children[i].getComponent(XLItem);
+            comp.node.active = comp.type == type;
+          }
+        };
+
+        _proto.updateList = function updateList(type, value) {
+          this.nameLab.string = value;
+          this.nameLab.updateRenderData(true);
+          this.node.active = false;
+          this.list.updateList(type, value);
+        };
+
+        return Xllb;
+      }(Component), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "item", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "content", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "list", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "view", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "nameLab", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
